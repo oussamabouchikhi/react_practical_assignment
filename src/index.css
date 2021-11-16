@@ -1,17 +1,62 @@
 @tailwind base;
 @tailwind components;
+
+html {
+  height: 100vh !important;
+}
+
+.search-border {
+  background-color: #f7fafc;
+}
+
+.card .image {
+  height: 250px;
+  transition: all 2s ease-in;
+}
+
+.card .image:hover {
+  transform: scale(1.5);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+}
+
+/* ===== DARK MODE ===== */
+
+.dark-mode {
+  background-color: #121212;
+  height: 100%;
+}
+
+.dark-mode .search-border,
+.dark-mode .search-text {
+  color: #bb86fc;
+}
+
+.dark-mode .search-border {
+  background-color: #262626;
+}
+
+.dark-mode header,
+.dark-mode .card {
+  background-color: #262626;
+}
+
+.dark-mode header,
+.dark-mode .card-title {
+  color: #bb86fc;
+}
+
+.dark-mode .info li {
+  color: #dddddd;
+}
+
+.dark-mode .tag,
+.dark-mode .search-btn {
+  background-color: #bb86fc;
+  color: #000;
+}
+
 @tailwind utilities;
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
